@@ -29,15 +29,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-
+ - They will both iterate one item at a time through an array and alter the item. But map will create a new array populated with the changed items, while forEach alters the existing array.
 2. What is the difference between a function and a method?
-
+ - A function can be standalone, while a method is attached to an object (or array which is an object).
 3. What is closure?
-
+ - Closure refers to the concept of blocks of code sort of sectioning off some variables from other code, and making some available. This is why if you are writing a for loop, and you want to store the data you are manipulating, you have to declare a variable outside of it first. The for loop will have access to the variables outside of itself, but anything outside of the for loop cannot access what is happening inside of the loop.
 4. Describe the four rules of the 'this' keyword.
+ - Global/Window binding This is refering to the global or window object, so everything containing it.
 
+ - Implicit Binding When this is used inside an object, this refers to that object, or what would be to the left of the period when calling a property or method.
+
+ - New Binding When we create a new instance of an object, the constructor function will bind "this" to refer to that new object
+
+ - Explicit Binding When we explicitly tell JavaScript to bind this to a specific, different object than the original using .call, .apply, or .bind . Call and apply will differ in the way they accept arguments, but both execute immediately. .bind on the other hand will allow for invocation at a later time.
 5. Why do we need super() in an extended class?
-
+ - The super() allows for inheritance. It takes the properties and methods from the original class we are extending and passes them on to the new class.
 ## Project Set up
 
 Follow these steps to set up and work on your project:
